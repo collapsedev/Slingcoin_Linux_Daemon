@@ -70,7 +70,7 @@
 #include <QStyle>
 #include <QToolButton>
 #include <QScrollArea>
-#include <QScroller>
+//#include <QScroller>
 #include <QTextDocument>
 #include <QNetworkAccessManager>
 #include <QNetworkRequest>

@@ -17,7 +17,7 @@
 #include <QTimer>
 #include <QDebug>
 #include <QScrollArea>
-#include <QScroller>
+//#include <QScroller>
 
 #define DECORATION_SIZE 64
 #define NUM_ITEMS 6
@@ -112,9 +112,9 @@ OverviewPage::OverviewPage(QWidget *parent) :
 
     ui->frameDarksend->setVisible(false);  // Hide darksend features
 
-    QScroller::grabGesture(ui->scrollArea, QScroller::LeftMouseButtonGesture);
-    ui->scrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    ui->scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    //QScroller::grabGesture(ui->scrollArea, QScroller::LeftMouseButtonGesture);
+    //ui->scrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    //ui->scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
     ui->columnTwoWidget->setContentsMargins(0,0,0,0);
     ui->columnTwoWidget->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);

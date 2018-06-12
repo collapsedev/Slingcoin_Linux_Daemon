@@ -917,11 +917,11 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     // ********************************************************* Step 10.1: startup secure messaging
     
-    SecureMsgStart(fNoSmsg, GetBoolArg("-smsgscanchain", false));
+    //SecureMsgStart(fNoSmsg, GetBoolArg("-smsgscanchain", false));
 
     // ********************************************************* Step 10.2: startup SlingRoad
 
-    MarketInit();
+    //MarketInit();
 
     // ********************************************************* Step 11: start node
 

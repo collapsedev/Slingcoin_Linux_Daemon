@@ -1831,7 +1831,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
             return error("ConnectBlock() : UpdateTxIndex failed");
     }
 
-
+#ifdef SLOW_ADDR_INDEX
     // Write Address Index
     BOOST_FOREACH(CTransaction& tx, vtx)
     {
@@ -1877,7 +1877,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 	    }
 	}
     }
-
+#endif
     // Update block index on disk without changing it in memory.
     // The memory index structure will be changed after the db commits.
     if (pindex->pprev)

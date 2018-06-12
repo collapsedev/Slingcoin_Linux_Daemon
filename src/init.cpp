@@ -411,7 +411,7 @@ bool AppInit2(boost::thread_group& threadGroup)
         return InitError("Invalid combination of -testnet and -regtest.");
     }
 
-    if (TestNet())
+    if (true /*TestNet()*/)
     {
         SoftSetBoolArg("-irc", true);
     }

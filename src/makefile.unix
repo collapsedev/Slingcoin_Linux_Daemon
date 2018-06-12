@@ -91,7 +91,7 @@ LIBS+= \
 #
 
 
-DEBUGFLAGS=-g
+DEBUGFLAGS=
 
 
 ifeq (${ARCH}, i686)

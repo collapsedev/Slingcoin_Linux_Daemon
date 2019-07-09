@@ -8,6 +8,13 @@ USE_WALLET:=1
 LINK:=$(CXX)
 ARCH:=$(system lscpu | head -n 1 | awk '{print $2}')
 
+CXXFLAGS=-mtune=native -march=native
+
+# Uncomment for portable DB
+#BDB_LIB_SUFFIX=-4.8
+#BDB_INCLUDE_PATH=/usr/include/libdb4/
+#BDB_LIB_PATH=/usr/include/libdb4/
+
 #Force compatible BigNum OpenSSL 1.0.X.
 #Comment lines if your system has compatible version..
 OPENSSL_INCLUDE_PATH=/usr/local/ssl/include
